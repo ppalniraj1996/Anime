@@ -1,0 +1,97 @@
+.container {
+  border: 100px solid black;
+  display: flex;
+  margin-left: 3%;
+  width: 80%;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 12px;
+  gap: 12px;
+}
+
+.container img {
+  width: 40%;
+  border: 2px solid black;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  margin: 50px auto;
+  width: 100px;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid orange;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.container > div {
+  text-align: left;
+  width: 60%;
+}
+
+.container h5 {
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 25px auto;
+}
+
+.container span {
+  font-size: 15px;
+  color: orange;
+  margin-left: 10px;
+}
+
+.container a {
+  background-color: orange;
+  height: 80px;
+  font-weight: 600;
+  border: 5px solid black;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  border-radius: 100px;
+  cursor: pointer;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+@media all and (min-width: 50px) and (max-width: 391px) {
+  .container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .container img {
+    width: 90%;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 391px) and (max-width: 821px) {
+  .container {
+    width: 90%;
+  }
+}
